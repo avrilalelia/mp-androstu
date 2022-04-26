@@ -59,5 +59,46 @@
         android:layout_margin="20dp"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/latitudetext"
+        android:layout_below="@id/logoutbtn"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="Latitude:" />
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudetext"
+        android:layout_centerHorizontal="true"
+        android:text="Latitude will be here! "
+        android:textColor="#555555" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/longitudetext"
+        android:layout_below="@id/latTextView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="Longitude:" />
+
+    <TextView
+        android:id="@+id/lonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longitudetext"
+        android:layout_centerHorizontal="true"
+        android:text="Longitude will be here! "
+        android:textColor="#555555" />
+
+    <CalendarView
+        android:id="@+id/simpleCalendarView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
 
 </RelativeLayout>
