@@ -72,7 +72,7 @@ public class TimeDuration extends AppCompatActivity {
 
         getDateAndTime = findViewById(R.id.waktulogin);
         calendar = Calendar.getInstance();
-        simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
+        simpleDateFormat = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss");
         Date = simpleDateFormat.format(calendar.getTime());
         getDateAndTime.setText(Date);
 
