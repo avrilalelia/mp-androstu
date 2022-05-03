@@ -1,0 +1,116 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.logintime"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:5:5-81
+11-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+13-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:7:5-85
+13-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:7:22-82
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:8:5-78
+14-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:9:5-66
+15-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.SET_ALARM" />
+16-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:10:5-68
+16-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:10:22-65
+17
+18    <application
+18-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:13:5-34:19
+19        android:allowBackup="true"
+19-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:14:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.7.0] C:\Users\avril\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:15:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:16:9-41
+24        android:networkSecurityConfig="@xml/network_security_config"
+24-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:20:9-69
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:17:9-54
+26        android:supportsRtl="true"
+26-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:19:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.LoginTime"
+28-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:21:9-47
+29        android:usesCleartextTraffic="true" >
+29-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:18:9-44
+30        <activity
+30-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:22:9-24:40
+31            android:name="com.example.logintime.TimeDuration"
+31-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:23:13-41
+32            android:exported="false" />
+32-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:24:13-37
+33        <activity
+33-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:25:9-33:20
+34            android:name="com.example.logintime.MainActivity"
+34-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:26:13-41
+35            android:exported="true" >
+35-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:27:13-36
+36            <intent-filter>
+36-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:28:13-32:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:29:17-69
+37-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:29:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:31:17-77
+39-->C:\Users\avril\Projects\TugasLeoPart-main\app\src\main\AndroidManifest.xml:31:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\avril\.gradle\caches\transforms-3\8a98227cf0c04eaba7da96738f5732a0\transformed\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+43            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+43-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\avril\.gradle\caches\transforms-3\8a98227cf0c04eaba7da96738f5732a0\transformed\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+44            android:exported="false"
+44-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\avril\.gradle\caches\transforms-3\8a98227cf0c04eaba7da96738f5732a0\transformed\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+45            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+45-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\avril\.gradle\caches\transforms-3\8a98227cf0c04eaba7da96738f5732a0\transformed\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+46
+47        <meta-data
+47-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\avril\.gradle\caches\transforms-3\afd75f510bd9a72d0a4df3501ef676b6\transformed\play-services-basement-17.6.0\AndroidManifest.xml:23:9-25:69
+48            android:name="com.google.android.gms.version"
+48-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\avril\.gradle\caches\transforms-3\afd75f510bd9a72d0a4df3501ef676b6\transformed\play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
+49            android:value="@integer/google_play_services_version" />
+49-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\avril\.gradle\caches\transforms-3\afd75f510bd9a72d0a4df3501ef676b6\transformed\play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\avril\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\avril\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+53            android:authorities="com.example.logintime.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\avril\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\avril\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\avril\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\avril\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\avril\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\avril\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\avril\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\avril\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+61        </provider>
+62    </application>
+63
+64</manifest>

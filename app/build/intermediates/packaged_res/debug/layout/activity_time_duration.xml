@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6EEE0"
+        tools:context=".TimeDuration">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/waktu"
+            android:text="Waktu Login"
+            android:textColor="#F6EEE0"
+            android:background="#A45C40"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/waktulogin"
+            android:textColor="@color/black"
+            android:layout_below="@+id/waktu"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textcalendar"
+            android:text="Calendar"
+            android:textColor="#F6EEE0"
+            android:background="#A45C40"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@id/waktulogin"
+            android:gravity="center"
+            />
+
+        <CalendarView
+            android:id="@+id/simpleCalendarView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/textcalendar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/durasi"
+            android:text="Durasi Login"
+            android:layout_below="@id/simpleCalendarView"
+            android:textColor="#F6EEE0"
+            android:background="#A45C40"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/durasi"
+            android:layout_marginBottom="50dp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textlokasi"
+            android:text="Lokasi"
+            android:textColor="#F6EEE0"
+            android:background="#A45C40"
+            android:layout_below="@id/chronometer"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/latitudetext"
+            android:layout_below="@id/textlokasi"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Latitude:" />
+
+        <TextView
+            android:id="@+id/latTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitudetext"
+            android:layout_centerHorizontal="true"
+            android:text="Latitude will be here! "
+            android:textColor="#555555" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/longitudetext"
+            android:layout_below="@id/latTextView"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Longitude:" />
+
+        <TextView
+            android:id="@+id/lonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/longitudetext"
+            android:layout_centerHorizontal="true"
+            android:text="Longitude will be here! "
+            android:textColor="#555555" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGet"
+            android:layout_below="@id/lonTextView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/design_default_color_secondary"
+            android:textColor="@android:color/white"
+            android:onClick="getWeatherDetails"
+            android:text="Klik disini untuk melihat cuaca hari ini!"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResult"
+            android:layout_below="@+id/btnGet" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etHour"
+            android:layout_below="@+id/tvResult"
+            android:ems="18"
+            android:hint="Hour"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etMinute"
+            android:layout_below="@+id/etHour"
+            android:ems="18"
+            android:hint="Minute"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Time"
+            android:id="@+id/btnTime"
+            android:layout_below="@+id/etMinute" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm"
+            android:id="@+id/btnAlarm"
+            android:layout_below="@+id/btnTime" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoutbtn"
+            android:layout_below="@id/tvResult"
+            android:text="LOGOUT"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
